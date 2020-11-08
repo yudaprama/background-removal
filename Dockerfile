@@ -1,4 +1,4 @@
-FROM pytorch:latest
+FROM pytorch/pytorch:latest
 
 WORKDIR /usr/src/app
 
