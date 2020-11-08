@@ -1,6 +1,10 @@
 FROM pytorch/pytorch:latest
 
-WORKDIR /usr/src/app
+# Update aptitude with new repo
+RUN apt-get update
+
+# Install software 
+RUN apt-get install -y git
 
 RUN git clone https://github.com/OPHoperHPO/image-background-remove-tool && \
 cd image-background-remove-tool && \
